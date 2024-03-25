@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BucksBunny</title>
+	<meta name="description" content=" Asva Meta Marketplace is an NFT metaverse marketplace where users can buy, sell, rent and monetize virtual assets representing in-game and metaverse assets." />
+      <link href="images/bunny.png" rel="icon"/>
+      <link href="images/bunny.png" rel="apple-touch-icon"/>
+      <link rel="shortcut icon" href="images/bunny.png" type="image/x-icon"/>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Space+Grotesk:wght@500&display=swap"
+		rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/light-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row dflex">
+				<div class="left dflex">
+					<div class="logo">
+						<a href="#">
+							<img class="dark-layer" src="images/bunny.png">
+							<img class="light-layer" src="images/bunny.png">
+						<p>BucksBunny</p>	
+						</a>
+						<!-- <span>By AsvaLab</span> -->
+					</div>
+					<div class="menu">
+						<ul>
+							<li><a href="#" class="active">Home</a></li>
+							<li><a class="scrollTo" href="#Features">Launchpad</a></li>
+							<li><a href="https://asvalabs.medium.com/introducing-asva-meta-marketplace-the-worlds-first-metaverse-centric-marketplace-1fbb521b029c" target="_blank">Docs</a></li>
+							<!-- <div class="cta"><a href="#">Launching App</a> -->
+						<!-- </div> -->
+						</ul>
+				
+					</div>
+				</div>
+				<div class="right">
+					<div class="cta" id="parent">
+						<a href="#" class="launch" style="background:linear-gradient(97.16deg, #00D1FF -8.5%, #5648FF 113.55%)"">Launch App</a>
+						<span class="comming">Coming soon</span>
+					</div>
+					
+					<a href="#" class="theme-cta">
+						<img class="dark-layer" src="images/sun.png">
+						<img class="light-layer" src="images/sun1.png">
+					</a>
+					<div class="menu_toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="banner"> 
+		<div class="container">
+			<div class="row ">
+				<div class="left">
+					<div class="text">
+						<h1 style="font-family:'Space Grotesk'">Discover, Trade, Monetize<br>  <span class="sub-heading letters"></span> </h1>
+						<p>World’s first utility-centric NFT platform for<br> virtual world assets, social tokens and more.</p>
+						<div class="cta">
+							<a href="#">
+								INO launchpad Coming Soon!
+
+							</a>
+							<div id="JoinWaitlistButton">Join Waitlist</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="image">
+						<img class="dark-layer" src="images/Hero.png"> 
+						<img class="light-layer" src="images/Hero.png"> 
+					</div>
+				</div>
+			</div>
+		</div>
+            <div id="Modal">
+				<div id="ModalContainer" class="w3-animate-zoom"d>
+					<div class="closeImage">
+						<img src="images/x-circle.svg" alt="" class="DarK-layer">
+					 <img src="images/x-circleLight.svg" alt="" class="light-layer">
+
+					</div>
+					<h1 class="titleModal">Enter your email address to join whitelist</h1>
+					<input type="text" class="InputEmail" id="subscribeEmail" placeholder="Enter email id"/>
+					<div class="ButtonDiv">
+					<button class="submit-btn" id="subscribe-handler">Submit</button>
+					</div>
+					<div id="response">
+						<div></div>
+					</div>
+					
+				</div>
+
+			</div>
+			<div id="ThankYouModal">
+				<div id="ModalContainer" class="w3-animate-zoom" >
+		        <h1 class="titleModal">Thank you for joining the waitlist</h1>
+				<p class="ThankYouDescription">You will be notified about the Launch.</p>
+
+					<button class="CloseBtn">
+						Close
+					</button>
+
+				
+				</div>
+			</div>
+
+
+
+	</section>
+
+	<section class="ownership" id="Features">
+		<div class="container">
+			<div class="heading">
+				<h2>Unlock the full potential of your<br> <span class="sub-heading"> Virtual Ownership</span> Assets </h2>
+				<p style="color: #777D92">The World’s first Marketplace to trade and rent virtual ownership-based 
+					<br>utility assets like virtual real estate, social
+					tokens, in-game assets.</p>
+			</div>
+			<div class="row grid-4">
+				<!-- 1 -->
+				<div class="item">
+					<div class="image">
+						<img class="dark-layer" src="images/icon/LaunchIcon.svg">
+						<img class="light-layer" src="images/icon/LaunchIconLight.svg">
+					</div>
+					<div class="text">
+						<h4>Launch</h4>
+						<p>Empowering creators and projects to launch their NFTs through our INO framework.</p>
+					</div>
+				</div>
+								<!-- 2 -->
+
+				<div class="item">
+					<div class="image">
+						<img class="dark-layer" src="images/icon/2.svg">
+						<img class="light-layer" src="images/icon/2Light.svg">
+					</div>
+					<div class="text">
+						<h4>Trade</h4>
+						<p>Trade a range of digital assets with utility such as virtual land parcels, metaverse NFTs, gameFi assets and
+						collectibles.</p>
+					</div>
+				</div>
+				
+				<!-- 3 -->
+				<div class="item">
+					<div class="image">
+						<img class="dark-layer" src="images/icon/3.svg">
+						<img class="light-layer" src="images/icon/3Light.svg">
+					</div>
+					<div class="text">
+						<h4>Monetize</h4>
+						<p>Monetize virtual assets by renting them to earn yields. Access top utility NFTs without investing huge capital.</p>
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="item">
+					<div class="image">
+						<img class="dark-layer" src="images/icon/4.svg">
+						<img class="light-layer" src="images/icon/4Light.svg">
+					</div>
+					<div class="text">
+						<h4>Multi-Chain</h4>
+						<p>Supporting Virtual assets across top chains.</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="newsletters">
+		<div class="container">
+			<div class="row">
+				<div class="left">
+					<div class="text">
+						<h2 style="font-family: 'Space Grotesk'">Become An <span class="sub-heading" style="font-family: 'Space Grotesk';font-size:5rem">Asva <br>Insider</span></h2>
+						<p style="color:#777D92">Subscribe our newsletter and get information about latest<br> drops & collectibles, top-tier alpha and More.</p>
+					</div>
+				</div>
+				<div class="right" style="background: linear-gradient(97.16deg, #00D1FF -8.5%, #5648FF 113.55%);">
+					<div class="text">
+						<h3 style="font-family: 'Space Grotesk';">Newsletter</h3>
+						<p style="font-size:1.6rem; color:#FAFAFA;text-transform: capitalize;">Don’t Fall Behind. Subscribe and Stay Informed about new releases,<br>  latest updates, and top-tier alpha!</p>
+					</div>
+					<div class="form">
+						<form onsubmit="return false">
+							<div class="form-item">
+								<div class="form-group">
+									<input type="email" name="email" placeholder="enter your email address" class="subscribeEmail">
+								</div>
+								<div class="form-cta" >
+									<input type="submit" name="submit" value="Sign Up" id="subscribe-handle">
+								</div>
+								<div id="respnse">
+									<div></div>
+								</div>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-row">
+				<div class="footer-item logo">
+					<div class="footer-logo">
+						<a href="#">
+							<img class="dark-layer" src="images/bunny.png">
+							<img class="light-layer" src="images/bunny.png">
+							<span class="main-name">BucksBunny</span>	
+						</a>
+						<!-- <span>By AsvaLab</span> -->
+					</div>
+					<p>World’s first utility-centric NFT platform for virtual world assets, social tokens and more.</p>
+				</div>
+				<div class="footer-item">
+					<div class="text">
+						<h3>Resources</h3>
+						<ul>
+							<li><a href="https://metalaunch.io/static/media/terms-of-use.45e79e07d6c3ecc3575a.pdf" target="blank">Terms Of Service</a></li>
+							<li><a href="https://metalaunch.io/static/media/privacy-policy.04922875d9717bf2bf4a.pdf" target="blank">Privacy Policy</a></li>
+							<li><a href="mailto:contact@asvarium.com">Contact Us</a></li>
+							<li><a href="https://asvalabs.medium.com/introducing-asva-meta-marketplace-the-worlds-first-metaverse-centric-marketplace-1fbb521b029c" target="blank">Blog</a></li>
+						</ul>						
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="text">
+						<h3>Connect</h3>
+						<ul>
+							<li><a href="https://twitter.com/asvarium" target="blank">Twitter</a></li>
+							<li><a href="https://t.me/AsvaLabsOfficial" target="blank">Telegram</a></li>
+							<li><a href="https://asvalabs.medium.com/" target="blank">Medium</a></li>
+							
+							<li><a href="https://www.linkedin.com/company/asvalabsofficial" target="blank">LinkedIn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('.scrollTo').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+	</script>
+</body>
+</html>
