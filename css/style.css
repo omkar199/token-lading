@@ -62,7 +62,7 @@ body {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 6.8rem;
   line-height: 7.2rem;
   color: #fff;
 }
@@ -353,6 +353,10 @@ span.sub-heading {
   justify-content: center;
   align-items: center;
 }
+.twitter-img {
+  width: 30px;
+  margin-left: 10px;
+}
 .menu ul li a {
   display: inline-block;
   padding: 1rem 2rem;
@@ -497,6 +501,7 @@ span.sub-heading {
 .banner .cta a {
   font-size: 1.8rem;
   line-height: 2.61rem;
+  display: flex;
 }
 
 /*========== OWNERSHIP CSS   ============*/
@@ -537,7 +542,11 @@ span.sub-heading {
   background: linear-gradient(96.41deg, #ff0074 1.22%, #6038f7 100%);
   border-radius: 24px;
   color: #fff;
-  padding: 4rem 4.8rem;
+
+  /* padding: 4rem 4.8rem; */
+}
+.newsletters .right img {
+  border-radius: 24px;
 }
 .newsletters h3 {
   margin-bottom: 1.6rem;
@@ -677,12 +686,16 @@ span.sub-heading {
 @media (max-width: 768px) {
   .header .logo img,
   .footer .footer-logo img {
-    max-width: 13rem;
+    max-width: 5rem;
+    object-fit: contain;
   }
   .banner .row,
   .newsletters .row {
     grid-template-columns: 1fr;
     min-height: inherit;
+  }
+  .logo p {
+    font-size: 3rem;
   }
   .titleModal {
     font-size: 20px;
