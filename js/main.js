@@ -9,7 +9,7 @@ $(document).ready(function () {
 
   var typed = new Typed('.letters', {
     // strings: ['Digital Assets', 'Utility Assets', 'In-game Assets'],
-    strings: ['$BB', 'BucksBunny'],
+    strings: ['$BB', 'Token Generator', 'NFT'],
     typeSpeed: 60,
     backDelay: 600,
     loopCount: true,

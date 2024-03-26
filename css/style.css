@@ -481,11 +481,11 @@ span.sub-heading {
   grid-template-columns: 1.2fr 1fr;
 }
 .banner .image {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0px;
   bottom: 0;
-  text-align: right;
+  /* text-align: right; */
 }
 .banner .image img {
   max-width: 90%;
@@ -707,6 +707,7 @@ span.sub-heading {
     grid-gap: 4rem;
   }
   .banner .image {
+    top: 50px;
     position: relative;
     width: 100vw;
     margin-left: -50vw;
@@ -714,7 +715,7 @@ span.sub-heading {
   }
   .banner .left {
     order: 2;
-    margin-top: -8vh;
+    margin-top: 10vh;
     /* changed -18vh to 8h */
   }
   .banner .right {
@@ -772,7 +773,7 @@ span.sub-heading {
     padding-bottom: 6rem;
   }
   .newsletters .right {
-    padding: 3rem 1.5rem;
+    /* padding: 3rem 1.5rem; */
   }
   .newsletters .right p {
     font-size: 1.4rem;
